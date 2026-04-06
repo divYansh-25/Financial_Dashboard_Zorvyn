@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { transactions } from "../data/mockdata";
 
-function Transactions() {
+function Transaction() {
   const [search, setSearch] = useState("");
 
   const filtered = useMemo(() => {
@@ -78,4 +78,4 @@ function Transactions() {
   );
 }
 
-export default Transactions;
+export default Transaction;
