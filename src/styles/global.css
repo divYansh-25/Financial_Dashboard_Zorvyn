@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg:         #f4f3ef;
+  --bg2:        #edecea;
+  --surface:    #ffffff;
+  --surface2:   #f9f8f6;
+  --border:     rgba(0,0,0,0.08);
+  --border2:    rgba(0,0,0,0.14);
+  --text:       #1a1916;
+  --text2:      #6b6963;
+  --text3:      #a09c96;
+  --accent:     #d4622a;
+  --accent2:    #f0e6df;
+  --green:      #2d9e6b;
+  --green-bg:   #e6f5ee;
+  --red:        #c0392b;
+  --red-bg:     #fdecea;
+  --amber:      #c17e1a;
+  --amber-bg:   #fef3e2;
+  --radius:     12px;
+  --radius-sm:  8px;
+  --shadow:     0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md:  0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+  --font-body:  'DM Sans', sans-serif;
+  --font-head:  'Syne', sans-serif;
+  --sidebar-w: 240px;
+  --transition: 0.2s ease;
+}
+
+.dark {
+  --bg:       #141412;
+  --bg2:      #1c1b19;
+  --surface:  #222220;
+  --surface2: #2a2927;
+  --border:   rgba(255,255,255,0.07);
+  --border2:  rgba(255,255,255,0.12);
+  --text:     #f0ede8;
+  --text2:    #9e9a94;
+  --text3:    #6a6660;
+  --accent:   #e07b4f;
+  --accent2:  #2d1f17;
+  --green:    #3db87a;
+  --green-bg: #0e2d1e;
+  --red:      #e05c5c;
+  --red-bg:   #2d1212;
+  --amber:    #e0a84a;
+  --amber-bg: #2d2008;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+  transition: background var(--transition), color var(--transition);
+}
+h1, h2, h3, h4 {
+  font-family: var(--font-head);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.app{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+.layout{
+  display:flex;
+  flex:1;
+  overflow:hidden;
+}
+
+.content{
+  flex:1;
+  padding:20px;
+  background:var(--bg);
+  overflow-y:auto;
+}
+
+@media(max-width:768px){
+  .content{
+    padding:14px;
+  }
+}
+
+
+
